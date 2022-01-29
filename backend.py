@@ -13,7 +13,6 @@ def root():
     data = r.json()["MRData"]["StandingsTable"]["StandingsLists"][0]["DriverStandings"][
         rand_driver_idx
     ]["Driver"]
-    # ["Driver"]  # []["givenName"]
     num = data["permanentNumber"]
     fname = data["givenName"]
     lname = data["familyName"]
