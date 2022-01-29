@@ -5,11 +5,17 @@ import pandas as pd
 
 app = FastAPI()
 
+years = 2020
+rand_driver_idx = 0
+
 
 @app.get("/")
 def root():
-    r = requests.get("http://ergast.com/api/f1/current/last/results.json")
-    data = r.json()["MRData"]["RaceTable"]["Races"][0]["Results"]
+    r = requests.get(f"http://ergast.com/api/f1/{years}/driverStandings.json")
+    data = r.json()["MRData"]["StandingsTable"]["StandingsLists"][0]["DriverStandings"][
+        rand_driver_idx
+    ]["Driver"]
+    # ["Driver"]  # []["givenName"]
     return data
 
 
