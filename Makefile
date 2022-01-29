@@ -18,7 +18,7 @@ lint:
 	pylint --disable=R,C backend.py
 
 dockerbuild:
-	docker build -t fantasy_f1 .
+	docker build -t f1_backend .
 
 dockerrun:
-	docker run --name ff_1 -d -p 8080:8080 fantasy_f1
+	docker run -p 8080:8080 050331820866.dkr.ecr.us-east-1.amazonaws.com/f1_backend:latest

@@ -4,9 +4,11 @@ WORKDIR /app
 
 COPY ./requirements.txt /app
 COPY ./backend.py /app
-COPY ./test_main.py /app
+COPY ./test_all.py /app
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-ENTRYPOINT python backend.py
+EXPOSE 8080
+
+CMD ["python", "backend.py"]
