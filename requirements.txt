@@ -3,8 +3,8 @@ fastapi
 requests
 pandas
 uvicorn
-streamlit
-watchdog
+# streamlit
+# watchdog
 pylint
 pytest
 black

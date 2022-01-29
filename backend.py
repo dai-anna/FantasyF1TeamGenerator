@@ -14,8 +14,13 @@ def root():
         rand_driver_idx
     ]["Driver"]
     # ["Driver"]  # []["givenName"]
-    output = "The current year's winner is number: {0}, {1} {2} ({3})! For other years, input year (between 2005-2021) at the end of the URL (e.g. /2020)".format(
-        data["permanentNumber"], data["givenName"], data["familyName"], data["code"]
+    num = data["permanentNumber"]
+    fname = data["givenName"]
+    lname = data["familyName"]
+    code = data["code"]
+    output = (
+        f"The current year's winner is number: {num}, {fname} {lname} ({code})! "
+        + "For other years, input year (between 2005-2021) at the end of the URL (e.g. /2020)"
     )
     return output
 
@@ -27,13 +32,13 @@ def years(year):
         data = r.json()["MRData"]["StandingsTable"]["StandingsLists"][0][
             "DriverStandings"
         ][rand_driver_idx]["Driver"]
-        # ["Driver"]  # []["givenName"]
-        output = "The winner in {4} is number: {0}, {1} {2} ({3})!".format(
-            data["permanentNumber"],
-            data["givenName"],
-            data["familyName"],
-            data["code"],
-            year,
+        num = data["permanentNumber"]
+        fname = data["givenName"]
+        lname = data["familyName"]
+        code = data["code"]
+        output = (
+            f"The winner in {year} is number: {num}, {fname} {lname} ({code})! "
+            + "For other years, input year (between 2005-2021) at the end of the URL (e.g. /2020)"
         )
     else:
         output = "Uhh... sorry we don't have this data :("
