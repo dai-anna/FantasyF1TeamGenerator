@@ -33,7 +33,7 @@ jobs:
         run: pytest test_all.py
         
       - name: linting
-        run: pylint backend.py
+        run: pylint --disable=R,C backend.py
   
       - name: formatting
         run: black backend.py
