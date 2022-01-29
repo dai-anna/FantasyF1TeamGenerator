@@ -9,7 +9,7 @@ rand_driver_idx = 0
 
 @app.get("/")
 def root():
-    r = requests.get(f"http://ergast.com/api/f1/current/driverStandings.json")
+    r = requests.get("http://ergast.com/api/f1/current/driverStandings.json")
     data = r.json()["MRData"]["StandingsTable"]["StandingsLists"][0]["DriverStandings"][
         rand_driver_idx
     ]["Driver"]
