@@ -15,8 +15,7 @@ killweb:
 	sudo killall uvicorn
 
 lint:
-	pylint --disable=R,C backend.py &&\
-		pylint --disable=R,C frontend.py &&\
+	pylint --disable=R,C backend.py
 
 dockerbuild:
 	docker build -t fantasy_f1 .

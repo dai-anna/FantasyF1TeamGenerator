@@ -1,7 +1,6 @@
 from fastapi import FastAPI
 import requests
 import uvicorn
-import pandas as pd
 
 app = FastAPI()
 
