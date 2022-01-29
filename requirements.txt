@@ -1,0 +1,10 @@
+
+fastapi
+requests
+pandas
+uvicorn
+streamlit
+watchdog
+pylint
+pytest
+black
