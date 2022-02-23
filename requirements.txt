@@ -2,6 +2,7 @@
 fastapi
 requests
 pandas
+click
 uvicorn
 # streamlit
 # watchdog
