@@ -12,10 +12,7 @@ def current_standings():
     fname = data["givenName"]
     lname = data["familyName"]
     code = data["code"]
-    output = (
-        f"The current year's winner is number: {num}, {fname} {lname} ({code})! "
-        + "For other years, input year (between 2005-2021) at the end of the URL (e.g. /2020)"
-    )
+    output = f"The current year's winner is number: {num}, {fname} {lname} ({code})! "
     return output
 
 
@@ -29,10 +26,7 @@ def years_standings(year):
         fname = data["givenName"]
         lname = data["familyName"]
         code = data["code"]
-        output = (
-            f"The winner in {year} is number: {num}, {fname} {lname} ({code})! "
-            + "For other years, input year (between 2005-2021) at the end of the URL (e.g. /2020)"
-        )
+        output = f"The winner in {year} is number: {num}, {fname} {lname} ({code})! "
     else:
         output = "Uhh... sorry we don't have this data :("
     return output

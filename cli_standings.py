@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 import click
-from functions import years_standings, current_standings
+from functions import years_standings
 
 
 @click.command()
 @click.option(
-    "--standings",
+    "--year",
     prompt=("Enter a year between 2005-2021"),
     help="Get the winner of a specific year",
 )
@@ -15,12 +15,5 @@ def standings(year: int):
     click.echo(response)
 
 
-def current():
-    """Pull the current year's winner"""
-    response = current_standings()
-    click.echo(response)
-
-
 if __name__ == "__main__":
-    current()
-    # standings()
+    standings()
