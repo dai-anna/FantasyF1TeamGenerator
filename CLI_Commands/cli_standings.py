@@ -1,5 +1,8 @@
 #!/usr/bin/python3
 import click
+import sys
+
+sys.path.append("../")
 from functions import years_standings
 
 
