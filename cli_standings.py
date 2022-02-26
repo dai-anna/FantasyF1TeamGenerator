@@ -12,7 +12,7 @@ from functions import years_standings
 def standings(year: int):
     """Pull the winner of a specific year"""
     response = years_standings(year)
-    click.echo(response)
+    click.echo(click.style(response, fg="yellow"))
 
 
 if __name__ == "__main__":
