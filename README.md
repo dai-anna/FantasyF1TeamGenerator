@@ -6,4 +6,7 @@ This AWS Cloud Native web application, deployed through FastAPI, pings the Ergas
 
 ## Architectural Diagram
 
-![f1_backend](https://user-images.githubusercontent.com/89488845/151679333-b95b7b4d-2fdb-42af-a40a-898bc6fe18c3.png)
+![f1_backend](https://user-images.githubusercontent.com/89488845/164878867-bcc15e10-e217-459c-a2d9-2d76f2f9130e.png)
+
+## In Action
+<img width="1267" alt="2018" src="https://user-images.githubusercontent.com/89488845/164879078-c4df4713-1571-4815-ad87-0a6b116948e3.png">
