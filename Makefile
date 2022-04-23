@@ -19,6 +19,12 @@ lint:
 
 dockerbuild:
 	docker build -t f1_backend .
+	
+dockertag:
+	docker tag f1_backend:latest 050331820866.dkr.ecr.us-east-1.amazonaws.com/f1_backend:latest
+
+dockerpush:
+	docker push 050331820866.dkr.ecr.us-east-1.amazonaws.com/f1_backend:latest
 
 dockerrun:
 	docker run -p 8080:8080 050331820866.dkr.ecr.us-east-1.amazonaws.com/f1_backend:latest
