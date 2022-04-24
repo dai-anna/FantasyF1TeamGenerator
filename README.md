@@ -5,7 +5,7 @@
 This AWS Cloud Native web application, deployed through FastAPI, pings the Ergast Developer API to tell you which driver won the Formula 1 season in a given year. This project is a work-in-progress as I plan to add new features as well as a front-end with interactive elements in the future.
 
 ## Architectural Diagram
-![f1_backend](https://user-images.githubusercontent.com/89488845/164999113-40e80111-9029-4807-a041-720833b6f980.png)
+![f1_backend](https://user-images.githubusercontent.com/89488845/164999248-986db19b-be1e-4068-82fc-fbac23d012f5.png)
 
 
 ## In Action
