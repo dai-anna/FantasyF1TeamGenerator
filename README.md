@@ -1,4 +1,6 @@
-# Who was the Formula 1 World Champion?
+# WIP - more functions to come
+
+## Who was the Formula 1 World Champion?
 
 [![CI](https://github.com/dai-anna/FantasyF1TeamGenerator/actions/workflows/main.yml/badge.svg)](https://github.com/dai-anna/FantasyF1TeamGenerator/actions/workflows/main.yml)
 
