@@ -1,4 +1,4 @@
-# WIP - more functions to come
+# *WIP*
 
 ## Who was the Formula 1 World Champion?
 
